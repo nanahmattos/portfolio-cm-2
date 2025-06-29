@@ -2,10 +2,10 @@
 
 import Link from "next/link";
 import Image from "next/image";
-//import { usePathname } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 export default function Nav() {
-  //const pathname = usePathname();
+  const pathname = usePathname();
 
   const navLinks = [
     { href: "/about", label: "Sobre", icon: "/icons/person.svg" },
@@ -25,32 +25,32 @@ export default function Nav() {
       icon: "/icons/tools.svg",
     },
   ];
-  
+
   return (
     <div className="hidden md:block">
-      <nav className="mr-4 justify-center flex relative p-1 rounded-full bg-white/10 backdrop-blur-md border border-white/20 shadow-lg h-full flex-col gap-4">
+      <nav className="mr-4 justify-center flex p-1 rounded-full bg-white/10 backdrop-blur-md border border-white/20 shadow-lg h-full flex-col gap-4 z-50 relative ">
         {navLinks.map((link) => {
-          
-
+          const isActive = pathname === link.href;
           return (
             <div key={link.href} className="group">
               <Link
                 href={link.href}
                 className={`flex items-center gap-3 px-3 py-2 rounded-md text-sm font-medium transition `}
-              >
+              > 
                 <Image
                   src={link.icon}
                   alt={link.label}
-                  width={20}
-                  height={20}
+                  width={30}
+                  height={30}
+                
                 />
-                <span className="menu-icone opacity-0 translate-x-0 group-hover:opacity-100 ">
+                <span className="menu-icone  opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
                   <Image
                     src={link.icon}
                     alt={link.label}
-                    width={20}
-                    height={20}
-                    className="invert mr-1 "
+                    width={25}
+                    height={25}
+                    className="invert mr-1"
                   />
                   {link.label}
                 </span>

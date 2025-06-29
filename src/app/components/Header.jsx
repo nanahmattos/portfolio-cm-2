@@ -9,9 +9,23 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [typedText, setTypedText] = useState("");
   const [index, setIndex] = useState(0);
+  const [scrolled, setScrolled] = useState(false);
 
   const fullText =
     pathname === "/about" ? "Olá, seja bem-vindo!" : "Carolina Mattos";
+  useEffect(() => {
+  const handleScroll = () => {
+    const isMobile = window.innerWidth < 768;
+    if (isMobile && window.scrollY > 0) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+
+  window.addEventListener("scroll", handleScroll);
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
 
   useEffect(() => {
     setTypedText("");
@@ -34,7 +48,9 @@ export default function Header() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 w-full ">
+    <header  className={`sticky top-0 z-50 w-full transition-colors duration-300 ${
+    scrolled ? "bg-black/80 backdrop-blur-md" : ""
+  }`}>
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         {/* Navegação desktop */}
         <nav className="hidden md:flex gap-6">

@@ -68,45 +68,11 @@ const ProjetosPage = () => {
   };
 
   return (
-    <div>
-      <div className="justify-center w-full relative p-10 mb-2 rounded-xl bg-white/10 backdrop-blur-md border border-white/20 shadow-lg h-[calc(100vh-125px)] md:h-[calc(80vh-104px)]">
-        <button
-          onClick={handlePrev}
-          disabled={activeIndex === 0}
-          className={`absolute p-2 top-1/2 left-[-24px] bg-white rounded-full transform -translate-y-1/2 ${
-            activeIndex === 0
-              ? "opacity-30 cursor-not-allowed"
-              : "hover:scale-110"
-          }`}
-        >
-          <Image
-            src="/icons/chevron_left.svg"
-            alt="left"
-            width={30}
-            height={30}
-            className="invert"
-          />
-        </button>
-        <button
-          onClick={handleNext}
-          disabled={activeIndex === projects.length - 1}
-          className={`absolute p-2 top-1/2 right-[-24px] rounded-full bg-white transform -translate-y-1/2 ${
-            activeIndex === projects.length - 1
-              ? "opacity-30 cursor-not-allowed"
-              : "hover:scale-110"
-          }`}
-        >
-          <Image
-            src="/icons/chevron_right.svg"
-            alt="right"
-            width={30}
-            height={30}
-            className="invert"
-          />
-        </button>
-        <div className="h-full flex flex-col">
-          <div className="grid md:grid-cols-2 items-center overflow-y-auto flex-1">
-            <div className="flex justify-center">
+    <div className="h-full flex flex-col">
+      <div className="h-full w-full p-6 mb-2 rounded-xl bg-white/10 backdrop-blur-md border border-white/20 shadow-lg justify-center flex">
+        <div className="overflow-y-auto flex-1 flex justify-center items-center">
+          <div className="grid md:grid-cols-2 items-center max-w-5xl w-full ">
+            <div className="flex justify-center items-center">
               <Image
                 src={activeProject.image}
                 alt={activeProject.title}
@@ -147,27 +113,66 @@ const ProjetosPage = () => {
           </div>
         </div>
       </div>
-      <div className="p-6 rounded-xl bg-white/10 backdrop-blur-md border border-white/20 shadow-lg w-full h-fit">
-        <div className="grid gap-4 grid-cols-[repeat(auto-fit,minmax(120px,1fr))] ">
-          {projects.map((project, index) => (
-            <div
-              key={index}
-              className={`cursor-pointer rounded-lg border-2 transition-all ${
-                index === activeIndex
-                  ? "border-green-400 scale-105"
-                  : "border-transparent hover:border-white/50"
-              }`}
-              onClick={() => setActiveIndex(index)}
-            >
-              <Image
-                src={project.image}
-                alt={project.title}
-                width={150}
-                height={100}
-                className="rounded-lg object-cover w-full h-[100px]"
-              />
-            </div>
-          ))}
+
+      <div className="rounded-xl bg-white/10 backdrop-blur-md border border-white/20 shadow-lg w-full ">
+        <div className="flex justify-end p-2">
+          <button
+            onClick={handlePrev}
+            disabled={activeIndex === 0}
+            className={`mr-2  bg-white rounded-full  ${
+              activeIndex === 0
+                ? "opacity-30 cursor-not-allowed"
+                : "hover:scale-110"
+            }`}
+          >
+            <Image
+              src="/icons/chevron_left.svg"
+              alt="left"
+              width={30}
+              height={30}
+              className="invert"
+            />
+          </button>
+          <button
+            onClick={handleNext}
+            disabled={activeIndex === projects.length - 1}
+            className={` rounded-full bg-white   ${
+              activeIndex === projects.length - 1
+                ? "opacity-30 cursor-not-allowed"
+                : "hover:scale-110"
+            }`}
+          >
+            <Image
+              src="/icons/chevron_right.svg"
+              alt="right"
+              width={30}
+              height={30}
+              className="invert"
+            />
+          </button>
+        </div>
+        <div className="overflow-x-auto overflow-y-hidden md:overflow-visible px-4 md:py-2">
+          <div className="flex md:grid gap-4 md:grid-cols-[repeat(auto-fit,minmax(120px,1fr))]">
+            {projects.map((project, index) => (
+              <div
+                key={index}
+                className={`min-w-[140px] md:min-w-0 cursor-pointer rounded-lg border-2 transition-all ${
+                  index === activeIndex
+                    ? "border-green-400 scale-105"
+                    : "border-transparent hover:border-white/50"
+                }`}
+                onClick={() => setActiveIndex(index)}
+              >
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  width={150}
+                  height={100}
+                  className="rounded-lg object-cover w-full h-[100px]"
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
