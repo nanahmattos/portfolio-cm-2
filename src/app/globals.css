@@ -6,6 +6,46 @@
   width: 100%;
 }
 
+@layer base {
+  .title-primary {
+    font-size: clamp(1.75rem, 4vw, 3.5rem); /* de 28px a 56px */
+    color: #fff;
+    line-height: 1.2;
+  }
+
+  .title-secondary {
+    font-size: clamp(1.5rem, 3vw, 2rem); /* de 24px a 32px */
+    color: #fff;
+    line-height: 1.2;
+  }
+
+  .subtitle-primary {
+    font-size: clamp(1.125rem, 2vw, 1.5rem); /* de 18px a 24px */
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 100;
+  }
+
+  .subtitle-secondary {
+    font-size: clamp(1rem, 1.8vw, 1.25rem); /* de 16px a 20px */
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 100;
+  }
+
+  .text-primary {
+    color: #fff;
+    font-size: clamp(0.875rem, 1.5vw, 1.125rem); /* 14px a 18px */
+  }
+
+  .text-secondary {
+    color: #fff;
+    font-size: clamp(0.875rem, 1.5vw, 1.125rem);
+    font-weight: 100;
+  }
+}
+
+
 .button {
   color: #000;
   background-color: #fff;
@@ -19,7 +59,6 @@
   border-radius: 25px;
   cursor: pointer;
   padding: 5px;
-  
 }
 
 .menu-icone {
@@ -27,7 +66,7 @@
   z-index: 10;
   align-items: center;
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
   width: 120px;
   text-align: center;
   border-radius: 15px;
@@ -36,3 +75,20 @@
   color: #000;
 }
 
+/* Estilo customizado da barra de rolagem */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}

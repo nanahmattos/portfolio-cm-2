@@ -26,8 +26,9 @@ export default function RootLayout({ children }) {
           backgroundImage: "url(/images/background.svg)",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
+
         }}
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen w-full`}
       >
         <Header />        
         {children}

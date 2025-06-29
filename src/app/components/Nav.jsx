@@ -27,7 +27,7 @@ export default function Nav() {
   ];
   
   return (
-    <div>
+    <div className="hidden md:block">
       <nav className="mr-4 justify-center flex relative p-1 rounded-full bg-white/10 backdrop-blur-md border border-white/20 shadow-lg h-full flex-col gap-4">
         {navLinks.map((link) => {
           

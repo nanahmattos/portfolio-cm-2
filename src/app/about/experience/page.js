@@ -22,22 +22,29 @@ const Experience = () => {
         "Campo Grande/MS • Desenvolvimento web softwares de gerenciamento financeiro, rotas de transporte e reservas em atrativos destinados a agências de turismo. Experiência em ferramentas como HTML, CSS, JavaScript, Vue.js, SASS, Figma, Pinia, Vuex, Cypress e Quasar Framework.",
     },
   ];
- return (
-    <div>
-      <h3 className="text-6xl leading-[1.2]">Experiência</h3>
-      <p className="text-2xl tracking-[0.2em] font-thin">Profissional</p>
+  return (
+    <div className="h-full flex flex-col">
+      <h3 className="title-primary">Experiência</h3>
+      <p className="subtitle-primary">Profissional</p>
 
-      <div className="overflow-y-scroll max-h-[60vh] mt-4 pr-2">
+      <div className="overflow-y-auto flex-1 mt-4 pr-2">
         {content.map((item, index) => {
           return (
-            <div key={index} className="grid grid-cols-3 items-center p-4">
-              <div className="text-center col-span-1">
-                <p>{item.duracao}</p>
+            <div key={index} className="grid grid-cols-6 items-stretch ">
+              <div className="text-center flex items-center col-span-1 justify-center px-2">
+                <p className="text-primary">{item.duracao}</p>
               </div>
-              <div className="col-span-2">
-                <p className="text-2xl">{item.empresa}</p>
-                <p className="text-2xl">{item.cargo}</p>
-                <p className="font-thin">{item.descricao}</p>
+
+              <div className="flex justify-center col-span-1 relative">
+                <div className="w-[1px] bg-white h-full relative">
+                  <div className=" w-3 h-3 bg-white absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full z-10 " />
+                </div>
+              </div>
+
+              <div className="col-span-4 flex flex-col py-4 px-2 ">
+                <p className="title-secondary">{item.empresa}</p>
+                <p className="subtitle-secondary">{item.cargo}</p>
+                <p className="text-secondary">{item.descricao}</p>
               </div>
             </div>
           );

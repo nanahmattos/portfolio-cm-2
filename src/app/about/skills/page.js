@@ -36,11 +36,11 @@ const Skills = () => {
   }, []);
 
   return (
-    <div>
-      <h3 className="text-6xl leading-[1.2] text-white">Habilidades</h3>
-      <p className="text-2xl tracking-[0.2em] font-thin text-white" >Skills</p>
+    <div className="h-full flex flex-col">
+      <h3 className="title-primary">Habilidades</h3>
+      <p className="subtitle-primary" >Skills</p>
 
-      <div className="max-h-[60vh] mt-4 pr-2">
+      <div className="overflow-y-auto flex-1 mt-4 pr-2">
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 px-4">
           {content.map((item, index) => {
             const grau = `${progress[index] * 3.6}deg`; // porcentagem em graus

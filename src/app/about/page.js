@@ -22,28 +22,32 @@ const AboutPage = () => {
     },
   ];
   return (
-    <div className="text-center flex flex-col" style={{margin: "0 auto", maxWidth: "600px"}}>
-        
+  <div className="flex justify-center items-center w-full h-full overflow-y-auto max-h-[80vh] p-4 sm:p-8">
+    <div className="text-center flex flex-col justify-center items-center w-full max-w-2xl">
       <Image
         src="/images/nanahmattos.png"
         alt="Foto de Carolina Mattos"
-        width={300}
-        height={300}
-        style={{margin: "0 auto"}}
+        width={250}
+        height={250}
+        className="w-40 h-40 sm:w-52 sm:h-52 md:w-60 md:h-60 object-cover rounded-full mb-4"
       />
-      <h3 className="text-3xl text-white leading-[1.2]">Carolina Mattos, 27 anos</h3>
-      <p className="text-2xl text-white tracking-[0.2em] font-thin">Desenvolvedora Front-end</p>
-      <p className="text-lg text-white mt-4">
+      <h3 className="title-secondary">
+        Carolina Mattos, 27 anos
+      </h3>
+      <p className="subtitle-primary">
+        Desenvolvedora Front-end
+      </p>
+      <p className="text-primary">
         Destaco-me pela criatividade, proatividade e trabalho em equipe, além da
         organização e aprendizado ágil. Tenho experiência com HTML, CSS, React,
         TypeScript, Vue.js e JavaScript, sempre priorizando código limpo e
         documentação eficiente.
       </p>
 
-      <div className="mt-6">
-        <ul className="flex justify-center items-center gap-2">
+      <div className="mt-6 w-full">
+        <ul className="flex flex-col sm:flex-row justify-center items-center gap-2">
           {mediaLinks.map((media) => (
-            <li  key={media.alt}>
+            <li key={media.alt}>
               <a
                 href={media.href}
                 target="_blank"
@@ -55,16 +59,18 @@ const AboutPage = () => {
                   alt={media.alt}
                   width={20}
                   height={20}
-                  style={{ filter: "invert(1)" }}
+                  className="invert"
                 />
-                {media.label}
+                <span className="text-sm sm:text-base">{media.label}</span>
               </a>
             </li>
           ))}
         </ul>
       </div>
     </div>
-  );
+  </div>
+);
+
 };
 
 export default AboutPage;
