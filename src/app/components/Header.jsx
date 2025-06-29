@@ -11,7 +11,6 @@ export default function Header() {
   const navLinks = [
     { href: "/about", label: "Sobre" },
     { href: "/projects", label: "Projetos" },
-    { href: "/contato", label: "Contato" },
   ];
 
   return (
@@ -36,7 +35,7 @@ export default function Header() {
           <span className="text-white"> Carolina Mattos </span>
           <span className="text-green-400">{"}"}</span>
         </Link>
-        <button className="text-black p-2 bg-white rounded-full">
+        <button className="p-2 button">
           Vamos conversar?
         </button>
         {/* Mobile menu toggle */}

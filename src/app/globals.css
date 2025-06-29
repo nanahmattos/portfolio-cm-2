@@ -5,3 +5,34 @@
   margin: 0 auto;
   width: 100%;
 }
+
+.button {
+  color: #000;
+  background-color: #fff;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.button-media {
+  color: #000;
+  background-color: #fff;
+  border-radius: 25px;
+  cursor: pointer;
+  padding: 5px;
+  
+}
+
+.menu-icone {
+  position: absolute;
+  z-index: 10;
+  align-items: center;
+  display: flex;
+  flex-direction: row; 
+  width: 120px;
+  text-align: center;
+  border-radius: 15px;
+  padding: 5px;
+  background-color: #fff;
+  color: #000;
+}
+
