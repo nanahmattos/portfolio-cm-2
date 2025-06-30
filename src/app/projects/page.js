@@ -28,7 +28,7 @@ const ProjetosPage = () => {
       subtitle: "Bootstrap",
       description:
         "Para esta landing page dedicada ao jogo Rayman Legends, concentrei-me em estudos do bootstrap e responsividade. O resultado é uma interface adaptativa e eficiente.",
-      image: "/images/projetos/raymanlegends.png",
+      image: "/images/projetos/raymanLegends.png",
       site: "https://rayman-legends-game.vercel.app/",
       git: "https://github.com/nanahmattos/landingPage_rayman_legends.git",
     },
