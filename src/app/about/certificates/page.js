@@ -1,52 +1,52 @@
 const Certificates = () => {
   const content = [
     {
-      duracao: "2024 - Atualmente",
+      duracao: "Jan/2025 - Conclusão Set/2025",
       curso: "Engenharia de Software",
-      formacao: "Pós Graduação Lato Sensu",
+      formacao: "Pós-Graduação Lato Sensu",
       instituicao: "Faculdade Descomplica",
       type: "graduacao",
     },
     {
-      duracao: "2024 - Atualmente",
-      curso: "Curso Livre de UI/UX",
+      duracao: "Mar/2025 - Mar/2025",
+      curso: "SQL do básico ao avançado",
       formacao: "Curso Livre",
-      instituicao: "Plataforma XYZ",
+      instituicao: "Udemy (Hora de Codar)",
       type: "livre",
     },
     {
-      duracao: "2024 - Atualmente",
-      curso: "Engenharia de Software",
-      formacao: "Pós Graduação Lato Sensu",
-      instituicao: "Faculdade Descomplica",
+      duracao: "Jun/2023 - Conclusão Dez/2025",
+      curso: "Análise e Desenvolvimento de Sistemas",
+      formacao: "Graduação Tecnólogo",
+      instituicao: "Estácio",
       type: "graduacao",
     },
     {
-      duracao: "2024 - Atualmente",
-      curso: "Engenharia de Software",
-      formacao: "Pós Graduação Lato Sensu",
-      instituicao: "Faculdade Descomplica",
-      type: "livre",
-    },
-    {
-      duracao: "2024 - Atualmente",
-      curso: "Curso Livre de UI/UX",
+      duracao: "Jan/2023 - Dez/2023",
+      curso: "Engenheiro Front-end",
       formacao: "Curso Livre",
-      instituicao: "Plataforma XYZ",
+      instituicao: "EBAC",
       type: "livre",
     },
     {
-      duracao: "2024 - Atualmente",
-      curso: "Engenharia de Software",
-      formacao: "Pós Graduação Lato Sensu",
-      instituicao: "Faculdade Descomplica",
+      duracao: "Jan/2023 - Dez/2023",
+      curso: "UX/UI Designer",
+      formacao: "Curso Livre",
+      instituicao: "EBAC",
+      type: "livre",
+    },
+    {
+      duracao: "Jan/2017 - Dez/2022",
+      curso: "Design de Moda",
+      formacao: "Graduação Bacharel",
+      instituicao: "Anhembi Morumbi (2016 - 2017); FiaamFaam (2020 - 2022)",
       type: "graduacao",
     },
   ];
 
   return (
     <div className="h-full flex flex-col">
-      <h3 className="title-primary">Educação</h3>
+      <h3 className="title-primary">Formação</h3>
       <p className="subtitle-primary">Certificados</p>
 
       <div className="overflow-y-auto flex-1 mt-4 pr-2">

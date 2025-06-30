@@ -5,18 +5,25 @@ import Image from "next/image";
 
 const Skills = () => {
   const content = [
-    { ferramenta: "HTML", porcentagem: 90, icon: "/icons/linkedin.svg" },
-    { ferramenta: "CSS", porcentagem: 80, icon: "/icons/linkedin.svg" },
-    { ferramenta: "JavaScript", porcentagem: 70, icon: "/icons/linkedin.svg" },
-    { ferramenta: "React", porcentagem: 60, icon: "/icons/linkedin.svg" },
-    { ferramenta: "Vue", porcentagem: 75, icon: "/icons/linkedin.svg" },
-    { ferramenta: "TypeScript", porcentagem: 65, icon: "/icons/linkedin.svg" },
-    { ferramenta: "HTML", porcentagem: 90, icon: "/icons/linkedin.svg" },
-    { ferramenta: "CSS", porcentagem: 80, icon: "/icons/linkedin.svg" },
-    { ferramenta: "JavaScript", porcentagem: 70, icon: "/icons/linkedin.svg" },
-    { ferramenta: "React", porcentagem: 60, icon: "/icons/linkedin.svg" },
-    { ferramenta: "Vue", porcentagem: 75, icon: "/icons/linkedin.svg" },
-    { ferramenta: "TypeScript", porcentagem: 65, icon: "/icons/linkedin.svg" },
+    { ferramenta: "HMTL5", porcentagem: 100, icon: "/icons/html5.svg" },
+    { ferramenta: "CSS3", porcentagem: 100, icon: "/icons/css3.svg" },
+    { ferramenta: "JavaScript", porcentagem: 100, icon: "/icons/javascript.svg" },
+    { ferramenta: "TypeScript", porcentagem: 80, icon: "/icons/typescript.svg" },
+    { ferramenta: "PHP", porcentagem: 20, icon: "/icons/php.svg" },
+    { ferramenta: "SQL", porcentagem: 50, icon: "/icons/sql.svg" },
+    { ferramenta: "React", porcentagem: 70, icon: "/icons/react.svg" },
+    { ferramenta: "Vue", porcentagem: 100, icon: "/icons/vue.svg" },
+    { ferramenta: "Next.js", porcentagem: 60, icon: "/icons/nextjs.svg" },
+    { ferramenta: "Quasar", porcentagem: 100, icon: "/icons/quasar.svg" },
+    { ferramenta: "Bootstrap", porcentagem: 80, icon: "/icons/bootstrap.svg" },
+    { ferramenta: "Tailwind", porcentagem: 60, icon: "/icons/tailwind.svg" },
+    { ferramenta: "Sass", porcentagem: 100, icon: "/icons/sass.svg" },
+    { ferramenta: "Styled Components", porcentagem: 100, icon: "/icons/styledcomponents.svg" },
+    { ferramenta: "Figma", porcentagem: 100, icon: "/icons/figma.svg" },
+    { ferramenta: "Git", porcentagem: 70, icon: "/icons/git.svg" },
+    { ferramenta: "Node.js", porcentagem: 40, icon: "/icons/nodejs.svg" },
+    { ferramenta: "Cypress", porcentagem: 60, icon: "/icons/cypress.svg" },
+    { ferramenta: "MySQL", porcentagem: 40, icon: "/icons/mysql.svg" },
   ];
 
   const [progress, setProgress] = useState(
@@ -30,7 +37,7 @@ const Skills = () => {
           val < content[i].porcentagem ? val + 1 : val
         )
       );
-    }, 20); // velocidade da animação
+    }, 10); // velocidade da animação
 
     return () => clearInterval(interval);
   }, []);
@@ -50,15 +57,16 @@ const Skills = () => {
                 <div
                   className="w-24 h-24 rounded-full relative flex items-center justify-center transition-all duration-500"
                   style={{
-                    background: `conic-gradient(#22c55e ${grau}, #1f2937 0deg)`,
+                    background: `conic-gradient(#22c55e ${grau}, #303231 0deg)`,
                   }}
                 >
-                  <div className="w-20 h-20 bg-gray-700 rounded-full flex items-center justify-center">
+                  <div className="w-20 h-20 bg-gray-950 rounded-full flex items-center justify-center">
                     <Image
                       src={item.icon}
                       alt={item.ferramenta}
                       width={40}
                       height={40}
+                      className="invert"
                     />
                   </div>
                 </div>

@@ -6,6 +6,7 @@ const ProjetosLayout = ({ children }) => {
       <main className="w-full" >
         {children}
       </main>
+      
     </div>
   );
 };

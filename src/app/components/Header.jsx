@@ -14,18 +14,18 @@ export default function Header() {
   const fullText =
     pathname === "/about" ? "Olá, seja bem-vindo!" : "Carolina Mattos";
   useEffect(() => {
-  const handleScroll = () => {
-    const isMobile = window.innerWidth < 768;
-    if (isMobile && window.scrollY > 0) {
-      setScrolled(true);
-    } else {
-      setScrolled(false);
-    }
-  };
+    const handleScroll = () => {
+      const isMobile = window.innerWidth < 768;
+      if (isMobile && window.scrollY > 0) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
 
-  window.addEventListener("scroll", handleScroll);
-  return () => window.removeEventListener("scroll", handleScroll);
-}, []);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   useEffect(() => {
     setTypedText("");
@@ -48,9 +48,11 @@ export default function Header() {
   ];
 
   return (
-    <header  className={`sticky top-0 z-50 w-full transition-colors duration-300 ${
-    scrolled ? "bg-black/80 backdrop-blur-md" : ""
-  }`}>
+    <header
+      className={`sticky top-0 z-50 w-full transition-colors duration-300 ${
+        scrolled ? "bg-black/80 backdrop-blur-md" : ""
+      }`}
+    >
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         {/* Navegação desktop */}
         <nav className="hidden md:flex gap-6">
@@ -67,13 +69,13 @@ export default function Header() {
           ))}
         </nav>
 
-          <button
-            className="md:hidden text-white text-2xl"
-            onClick={() => setMenuOpen(!menuOpen)}
-            aria-label="Abrir menu"
-          >
-            ☰
-          </button>
+        <button
+          className="md:hidden text-white text-2xl"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Abrir menu"
+        >
+          ☰
+        </button>
         {/* Nome com animação */}
         <Link
           href="/"
@@ -86,9 +88,24 @@ export default function Header() {
 
         {/* Botão + mobile menu */}
         <div className="flex items-center gap-4">
-          <button className="hidden md:block px-4 py-2 rounded-full bg-green-400 text-black hover:bg-white hover:text-green-400 transition">
+          <a
+            href="https://wa.me/5511959379003" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden md:flex items-center gap-2 px-4 py-2 rounded-full bg-white text-green-600 font-bold hover:bg-gray-100 transition"
+          >
+            <img
+              src="/icons/icon_wpp.webp"
+              alt="WhatsApp"
+              width={20}
+              height={20}
+              
+            />
             Vamos conversar?
-          </button>
+          </a>
+          {/* <button className="hidden md:block px-4 py-2 rounded-full bg-green-600 text-white font-bold hover:bg-green-500 transition">
+            Vamos conversar?
+          </button> */}
         </div>
       </div>
 

@@ -5,7 +5,7 @@ const AboutPage = () => {
     {
       icon: "/icons/linkedin.svg",
       alt: "LinkedIn",
-      label: "Carolina Mattos",
+      label: "carolinamattos98",
       href: "https://www.linkedin.com/in/carolinamattos98/",
     },
     {
@@ -29,7 +29,7 @@ const AboutPage = () => {
         alt="Foto de Carolina Mattos"
         width={250}
         height={250}
-        className="w-40 h-40 sm:w-52 sm:h-52 md:w-60 md:h-60 object-cover rounded-full mb-4"
+        className="w-40 h-40 sm:w-52 sm:h-52 md:w-60 md:h-60 object-cover mb-4"
       />
       <h3 className="title-secondary">
         Carolina Mattos, 27 anos
@@ -52,7 +52,7 @@ const AboutPage = () => {
                 href={media.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 button-media"
+                className="flex items-center gap-1 button-media px-2 py-[5px]"
               >
                 <Image
                   src={media.icon}

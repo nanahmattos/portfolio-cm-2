@@ -58,7 +58,7 @@
   background-color: #fff;
   border-radius: 25px;
   cursor: pointer;
-  padding: 5px;
+  
 }
 
 .menu-icone {
@@ -75,7 +75,7 @@
   color: #000;
 }
 
-/* Estilo customizado da barra de rolagem */
+
 ::-webkit-scrollbar {
   width: 8px;
 }

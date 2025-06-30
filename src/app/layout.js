@@ -32,6 +32,7 @@ export default function RootLayout({ children }) {
       >
         <Header />        
         {children}
+         <p className="text-center text-white">2025 &copy; Carolina Mattos - Todos os direitos reservados</p>
       </body>
     </html>
   );

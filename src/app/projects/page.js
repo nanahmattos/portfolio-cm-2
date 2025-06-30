@@ -5,50 +5,50 @@ import Image from "next/image";
 
 const ProjetosPage = () => {
   const projects = [
-    {
-      title: "Clone Disney+",
-      subtitle: "HTML • CSS • SASS • JS",
-      image: "/images/nanahmattos.png",
+     {
+      title: "BTMS-Labs",
+      subtitle: "Vue • JS • Quasar • Sass",
+      image: "/images/projetos/efood.png",
       description:
-        "Realizei o clone da página inicial de compra da DisneyPlus, estabelecendo-a como uma referência essencial para o projeto Netflix Barbie-verso. Assim como no primeiro projeto, empreguei SASS, JavaScript, HTML e boas práticas de CSS para garantir uma experiência de usuário consistente.",
-      github: "https://github.com/nanahmattos",
-      site: "https://nanahmattos-ecommerce.vercel.app/",
+        "Nesse projeto pessoal desenvolvi um site de compras utilizando React, TypeScript, React Router, Redux para dinâmica, Styled Components para estilização e AJAX para a integração da API.",
+      site: "https://www.btms-labs.com.br/#/",
+      github: "https://github.com/nanahmattos/projetct6_eFood",
+    },
+    {
+      title: "E-Food",
+      subtitle: "React • TS • AJAX/API • Redux",
+      image: "/images/projetos/efood.png",
+      description:
+        "Nesse projeto pessoal desenvolvi um site de compras utilizando React, TypeScript, React Router, Redux para dinâmica, Styled Components para estilização e AJAX para a integração da API.",
+      site: "https://projetct6-e-food.vercel.app/",
+      github: "https://github.com/nanahmattos/projetct6_eFood",
+    },
+    {
+      title: "Rayman Legends",
+      subtitle: "Bootstrap",
+      description:
+        "Para esta landing page dedicada ao jogo Rayman Legends, concentrei-me em estudos do bootstrap e responsividade. O resultado é uma interface adaptativa e eficiente.",
+      image: "/images/projetos/raymanlegends.png",
+      site: "https://rayman-legends-game.vercel.app/",
+      git: "https://github.com/nanahmattos/landingPage_rayman_legends.git",
+    },
+    {
+      title: "Netflix Barbie",
+      subtitle: "HTML • CSS • SASS • JS",
+      description:
+        "Neste projeto, desenvolvi um clone da página inicial de compra da Netflix, incorporando o tema da Barbie. A landing page foi criada por meio de estudos em SASS, JavaScript, HTML e CSS, destacando também a utilização eficaz das ferramentas do DevTools.",
+      image: "/images/projetos/barbie_vercel.png",
+      site: "https://netflix-barbie.vercel.app/",
+      git: "https://github.com/nanahmattos/ebac_task_netflix_barbie.git",
     },
     {
       title: "Clone Disney+",
       subtitle: "HTML • CSS • SASS • JS",
-      image: "/images/nanahmattos.png",
       description:
         "Realizei o clone da página inicial de compra da DisneyPlus, estabelecendo-a como uma referência essencial para o projeto Netflix Barbie-verso. Assim como no primeiro projeto, empreguei SASS, JavaScript, HTML e boas práticas de CSS para garantir uma experiência de usuário consistente.",
-      github: "https://github.com/nanahmattos/nanahmattos-ecommerce",
-      site: "https://nanahmattos-ecommerce.vercel.app/",
-    },
-    {
-      title: "Clone Disney+",
-      subtitle: "HTML • CSS • SASS • JS",
-      image: "/images/nanahmattos.png",
-      description:
-        "Realizei o clone da página inicial de compra da DisneyPlus, estabelecendo-a como uma referência essencial para o projeto Netflix Barbie-verso. Assim como no primeiro projeto, empreguei SASS, JavaScript, HTML e boas práticas de CSS para garantir uma experiência de usuário consistente.",
-      github: "https://github.com/nanahmattos/nanahmattos-ecommerce",
-      site: "https://nanahmattos-ecommerce.vercel.app/",
-    },
-    {
-      title: "Clone Disney+",
-      subtitle: "HTML • CSS • SASS • JS",
-      image: "/images/nanahmattos.png",
-      description:
-        "Realizei o clone da página inicial de compra da DisneyPlus, estabelecendo-a como uma referência essencial para o projeto Netflix Barbie-verso. Assim como no primeiro projeto, empreguei SASS, JavaScript, HTML e boas práticas de CSS para garantir uma experiência de usuário consistente.",
-      github: "https://github.com/nanahmattos/nanahmattos-ecommerce",
-      site: "https://nanahmattos-ecommerce.vercel.app/",
-    },
-    {
-      title: "Clone Disney+",
-      subtitle: "HTML • CSS • SASS • JS",
-      image: "/images/nanahmattos.png",
-      description:
-        "Realizei o clone da página inicial de compra da DisneyPlus, estabelecendo-a como uma referência essencial para o projeto Netflix Barbie-verso. Assim como no primeiro projeto, empreguei SASS, JavaScript, HTML e boas práticas de CSS para garantir uma experiência de usuário consistente.",
-      github: "https://github.com/nanahmattos/nanahmattos-ecommerce",
-      site: "https://nanahmattos-ecommerce.vercel.app/",
+      image: "/images/projetos/cloneydisney.png",
+      site: "https://clone-disneyplus-hazel-delta.vercel.app/",
+      git: "https://github.com/nanahmattos/clone_disneyplus.git",
     },
   ];
 
@@ -71,13 +71,13 @@ const ProjetosPage = () => {
     <div className="h-full flex flex-col">
       <div className="h-full w-full p-6 mb-2 rounded-xl bg-white/10 backdrop-blur-md border border-white/20 shadow-lg justify-center flex">
         <div className="overflow-y-auto flex-1 flex justify-center items-center">
-          <div className="grid md:grid-cols-2 items-center max-w-5xl w-full ">
+          <div className="grid md:grid-cols-2 items-center max-w-5xl w-full gap-4">
             <div className="flex justify-center items-center">
               <Image
                 src={activeProject.image}
                 alt={activeProject.title}
-                width={200}
-                height={200}
+                width={600}
+                height={400}
                 className="object-cover"
               />
             </div>

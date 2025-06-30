@@ -1,25 +1,25 @@
 const Experience = () => {
   const content = [
     {
-      duracao: "2024 - Atualmente",
+      duracao: "Jan/2024 - Atualmente",
       empresa: "PedroSoft",
-      cargo: "Front-end Developer",
+      cargo: "Desenvolvedora Front-end",
       descricao:
-        "Campo Grande/MS • Desenvolvimento web softwares de gerenciamento financeiro, rotas de transporte e reservas em atrativos destinados a agências de turismo. Experiência em ferramentas como HTML, CSS, JavaScript, Vue.js, SASS, Figma, Pinia, Vuex, Cypress e Quasar Framework.",
+        "Campo Grande/MS • Desenvolvo web softwares de gerenciamento financeiro, rotas de transporte e reservas em atrativos destinados a agências de turismo. Experiência em ferramentas como HTML, CSS, JavaScript, Vue.js, SASS, Figma, Pinia, Vuex, Cypress, MySQL e Quasar Framework.",
     },
     {
-      duracao: "2023 - Atualmente",
-      empresa: "PedroSoft",
+      duracao: "Jan/2022 - Dez/2023",
+      empresa: "TK7 Marketing",
       cargo: "Front-end Developer",
       descricao:
-        "Campo Grande/MS • Desenvolvimento web softwares de gerenciamento financeiro, rotas de transporte e reservas em atrativos destinados a agências de turismo. Experiência em ferramentas como HTML, CSS, JavaScript, Vue.js, SASS, Figma, Pinia, Vuex, Cypress e Quasar Framework.",
+        "São Paulo/SP • Encarreguei-me da gestão de projetos artísticos, incluindo Branding e Campanhas. Liderei a criação e configuração de sites e-commerce em plataformas como Loja Integrada, Wix e Nuvem Shop. Experiência em ferramentas como Adobe Photoshop, Adobe Illustrator, Adobe After Effects e Adobe Premiere.",
     },
     {
-      duracao: "2023 - Atualmente",
-      empresa: "PedroSoft",
-      cargo: "Front-end Developer",
+      duracao: "Abr/2020 - Dez/2021",
+      empresa: "C.A.M (Centro Automotivo)",
+      cargo: "Auxiliar Administrativo",
       descricao:
-        "Campo Grande/MS • Desenvolvimento web softwares de gerenciamento financeiro, rotas de transporte e reservas em atrativos destinados a agências de turismo. Experiência em ferramentas como HTML, CSS, JavaScript, Vue.js, SASS, Figma, Pinia, Vuex, Cypress e Quasar Framework.",
+        "Campo Grande/MS • Gerenciei operações financeiras com destaque na organização e administração eficaz através do Microsoft Excel. Responsável pela emissão de notas fiscais eletrônicas, elaboração de orçamentos e atendimento ao cliente. Experiência em ferramentas: Google Docs, Pacote Microsoft Office e Emissor NF-e Sebrae.",
     },
   ];
   return (

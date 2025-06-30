@@ -1,13 +1,5 @@
-
+import { redirect } from "next/navigation";
 
 export default function Home() {
-  return (
-    <div >
-      <main className="container" >
-        <div>
-kkkkkkkkkkkkkkkkkk
-        </div>
-      </main>
-    </div>
-  );
+  redirect("/about");
 }
