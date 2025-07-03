@@ -38,10 +38,7 @@ const AboutPage = () => {
         Desenvolvedora Front-end
       </p>
       <p className="text-primary">
-        Destaco-me pela criatividade, proatividade e trabalho em equipe, além da
-        organização e aprendizado ágil. Tenho experiência com HTML, CSS, React,
-        TypeScript, Vue.js e JavaScript, sempre priorizando código limpo e
-        documentação eficiente.
+        com foco em <b>UX/UI</b>. Atualmente estou ampliando minha atuação para o back-end, com o objetivo de me tornar uma desenvolvedora <b>full stack</b>.
       </p>
 
       <div className="mt-6 w-full">
