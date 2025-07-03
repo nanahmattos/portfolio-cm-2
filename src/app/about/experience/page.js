@@ -1,7 +1,7 @@
 const Experience = () => {
   const content = [
     {
-      duracao: "Jan/2024 - Atualmente",
+      duracao: "Jan/2024 - Atual",
       empresa: "PedroSoft",
       cargo: "Desenvolvedora Front-end",
       descricao:
@@ -27,12 +27,12 @@ const Experience = () => {
       <h3 className="title-primary">Experiência</h3>
       <p className="subtitle-primary">Profissional</p>
 
-      <div className="overflow-y-auto flex-1 mt-4 pr-2">
+      <div className="overflow-y-auto flex-1 mt-4 md:pr-2">
         {content.map((item, index) => {
           return (
             <div key={index} className="grid grid-cols-6 items-stretch ">
-              <div className="text-center flex items-center col-span-1 justify-center px-2">
-                <p className="text-primary">{item.duracao}</p>
+              <div className="text-center flex items-center col-span-1 justify-center md:px-2">
+                <p className="text-xs md:text-md text-white">{item.duracao}</p>
               </div>
 
               <div className="flex justify-center col-span-1 relative">
@@ -41,7 +41,7 @@ const Experience = () => {
                 </div>
               </div>
 
-              <div className="col-span-4 flex flex-col py-4 px-2 ">
+              <div className="col-span-4 flex flex-col py-4 md:px-2 ">
                 <p className="title-secondary">{item.empresa}</p>
                 <p className="subtitle-secondary">{item.cargo}</p>
                 <p className="text-secondary">{item.descricao}</p>

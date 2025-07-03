@@ -24,7 +24,7 @@ export default function MobileNav() {
 
   return (
     <div className="md:hidden">
-      <nav className="fixed bottom-1 left-0 right-0 z-50 bg-white/10 rounded-xl backdrop-blur-md border border-white/20 shadow-lg p-2 mx-2  flex justify-around items-center">
+      <nav className="fixed bottom-1 left-0 right-0 z-50 bg-white/10 rounded-xl backdrop-blur-md border border-white/20 shadow-lg p-2 mx-1 md:mx-2  flex justify-around items-center">
         {navLinks.map((link) => (
           <Link
             key={link.href}

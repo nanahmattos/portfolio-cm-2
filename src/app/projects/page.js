@@ -69,7 +69,7 @@ const ProjetosPage = () => {
 
   return (
     <div className="h-full flex flex-col">
-      <div className="h-full w-full p-6 mb-2 rounded-xl bg-white/10 backdrop-blur-md border border-white/20 shadow-lg justify-center flex">
+      <div className="h-full w-full p-2 md:p-6 mb-2 rounded-xl bg-white/10 backdrop-blur-md border border-white/20 shadow-lg justify-center flex">
         <div className="overflow-y-auto flex-1 flex justify-center items-center">
           <div className="grid md:grid-cols-2 items-center max-w-5xl w-full gap-4">
             <div className="flex justify-center items-center">
@@ -156,7 +156,7 @@ const ProjetosPage = () => {
             {projects.map((project, index) => (
               <div
                 key={index}
-                className={`min-w-[140px] md:min-w-0 cursor-pointer rounded-lg border-2 transition-all ${
+                className={`min-w-[150px] md:min-w-0 cursor-pointer rounded-lg border-2 transition-all ${
                   index === activeIndex
                     ? "border-green-400 scale-105"
                     : "border-transparent hover:border-white/50"
