@@ -56,6 +56,7 @@ const AboutPage = () => {
                   alt={media.alt}
                   width={20}
                   height={20}
+                  priority 
                   className="invert"
                 />
                 <span className="text-sm sm:text-base">{media.label}</span>

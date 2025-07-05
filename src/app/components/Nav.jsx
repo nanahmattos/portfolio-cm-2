@@ -1,9 +1,7 @@
 "use client";
 
 import Link from "next/link";
-//import Image from "next/image";
 import { usePathname } from "next/navigation";
-//import { Icon } from 'lucide-react';
 import { DynamicIcon } from 'lucide-react/dynamic';
 
 export default function Nav() {
@@ -37,12 +35,12 @@ export default function Nav() {
             <div key={link.href} className="group">
               <Link
                 href={link.href}
-                className={`flex items-center gap-3 px-3 py-2 rounded-md text-sm font-medium transition `}
+                className={`flex items-center gap-3 px-2 py-2 rounded-md text-sm font-medium transition `}
               > 
-               <DynamicIcon name={link.icon} color={isActive ? "#3FF186" : "white"} size={20} />
+               <DynamicIcon name={link.icon} color={isActive ? "#3FF186" : "white"}  size={20} />
                 
-                <span className="menu-icone ml-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
-                   <DynamicIcon name={link.icon} color="black" size={15} />
+                <span className="menu-icone gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
+                   <DynamicIcon name={link.icon} color="black" size={15}  />
                   
                   {link.label}
                 </span>
