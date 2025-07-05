@@ -1,28 +1,30 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
+//import Image from "next/image";
 import { usePathname } from "next/navigation";
+//import { Icon } from 'lucide-react';
+import { DynamicIcon } from 'lucide-react/dynamic';
 
 export default function Nav() {
   const pathname = usePathname();
 
   const navLinks = [
-    { href: "/about", label: "Sobre", icon: "/icons/person.svg" },
+    { href: "/about", label: "Sobre", icon: "user" },
     {
       href: "/about/experience",
       label: "Experiência",
-      icon: "/icons/tools.svg",
+      icon: "briefcase-business",
     },
     {
       href: "/about/certificates",
       label: "Certificados",
-      icon: "/icons/certificate.svg",
+      icon: "graduation-cap",
     },
     {
       href: "/about/skills",
       label: "Habilidades",
-      icon: "/icons/tools.svg",
+      icon: "wrench",
     },
   ];
 
@@ -37,21 +39,11 @@ export default function Nav() {
                 href={link.href}
                 className={`flex items-center gap-3 px-3 py-2 rounded-md text-sm font-medium transition `}
               > 
-                <Image
-                  src={link.icon}
-                  alt={link.label}
-                  width={30}
-                  height={30}
+               <DynamicIcon name={link.icon} color={isActive ? "#3FF186" : "white"} size={20} />
                 
-                />
-                <span className="menu-icone  opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
-                  <Image
-                    src={link.icon}
-                    alt={link.label}
-                    width={25}
-                    height={25}
-                    className="invert mr-1"
-                  />
+                <span className="menu-icone ml-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
+                   <DynamicIcon name={link.icon} color="black" size={15} />
+                  
                   {link.label}
                 </span>
               </Link>
