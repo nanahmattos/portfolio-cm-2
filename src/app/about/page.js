@@ -28,8 +28,9 @@ const AboutPage = () => {
         src="/images/nanahmattos.png"
         alt="Foto de Carolina Mattos"
         width={250}
+        priority
         height={250}
-        className="w-40 h-40 sm:w-52 sm:h-52 md:w-60 md:h-60 object-cover mb-4"
+        className="w-40 h-40 sm:w-52 sm:h-52 object-cover mb-4"
       />
       <h3 className="title-secondary">
         Carolina Mattos, 27 anos
@@ -38,7 +39,7 @@ const AboutPage = () => {
         Desenvolvedora Front-end
       </p>
       <p className="text-primary">
-        com foco em <b>UX/UI</b>. Atualmente estou ampliando minha atuação para o back-end, com o objetivo de me tornar uma desenvolvedora <b>full stack</b>.
+        com experiência em <b>UX/UI</b> e, atualmente, expandindo meus conhecimentos em back-end para me tornar uma desenvolvedora <b>full stack</b>.
       </p>
 
       <div className="mt-6 w-full">

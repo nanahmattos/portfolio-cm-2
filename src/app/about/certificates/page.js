@@ -55,7 +55,7 @@ const Certificates = () => {
 
           return (
             <div key={index} className="grid grid-cols-5 md:grid-cols-4 items-stretch">
-              <div className="text-center flex items-center col-span-1 justify-center text-xs md:text-md md:px-2 ">
+              <div className="text-center flex items-center col-span-1 justify-center text-xs sm:text-md md:px-2 ">
                 <p className={isLivre ? "text-green-400" : "text-white"}>
                   {item.duracao}
                 </p>

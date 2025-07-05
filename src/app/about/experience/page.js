@@ -32,7 +32,7 @@ const Experience = () => {
           return (
             <div key={index} className="grid grid-cols-6 items-stretch ">
               <div className="text-center flex items-center col-span-1 justify-center md:px-2">
-                <p className="text-xs md:text-md text-white">{item.duracao}</p>
+                <p className="text-xs sm:text-md text-white">{item.duracao}</p>
               </div>
 
               <div className="flex justify-center col-span-1 relative">

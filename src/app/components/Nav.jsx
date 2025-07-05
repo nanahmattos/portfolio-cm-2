@@ -16,7 +16,7 @@ export default function Nav() {
     },
     {
       href: "/about/certificates",
-      label: "Certificados",
+      label: "Formação",
       icon: "graduation-cap",
     },
     {
@@ -37,10 +37,10 @@ export default function Nav() {
                 href={link.href}
                 className={`flex items-center gap-3 px-2 py-2 rounded-md text-sm font-medium transition `}
               > 
-               <DynamicIcon name={link.icon} color={isActive ? "#3FF186" : "white"}  size={20} />
+               <DynamicIcon name={link.icon} color={isActive ? "#3FF186" : "white"}  size={20} alt={link.label} />
                 
                 <span className="menu-icone gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
-                   <DynamicIcon name={link.icon} color="black" size={15}  />
+                   <DynamicIcon name={link.icon} color="black" size={15} alt={link.label}  />
                   
                   {link.label}
                 </span>
