@@ -5,14 +5,36 @@ import Image from "next/image";
 
 const ProjetosPage = () => {
   const projects = [
-     {
+    {
       title: "BTMS-Labs",
       subtitle: "Vue • JS • Quasar • Sass",
-      image: "/images/projetos/efood.png",
+      image: "/images/projetos/btmslab.png",
       description:
-        "Nesse projeto pessoal desenvolvi um site de compras utilizando React, TypeScript, React Router, Redux para dinâmica, Styled Components para estilização e AJAX para a integração da API.",
-      site: "https://www.btms-labs.com.br/#/",
-      github: "https://github.com/nanahmattos/projetct6_eFood",
+        "Projeto desenvolvido para uma empresa de tecnologia especializada em soluções de gerenciamento para o setor de turismo. Utilizei Vue, JavaScript, Quasar Framework e Sass para construção do sistema. Além do desenvolvimento do site, também criei a identidade visual e a logo da marca.",
+
+      site: "https://pedrosoftsite.vercel.app/#/",
+      github: "https://github.com/nanahmattos/pedrosoftsite",
+    },
+    {
+      title: "Meu segundo Portfólio",
+      subtitle: "Next.js • JS • React • Tailwind",
+      image: "/images/projetos/portfolio.png",
+      description:
+        "Este é meu segundo portfólio, desenvolvido com foco em performance e design responsivo. Utilizei Next.js para renderização otimizada, Tailwind CSS para estilização moderna e JavaScript para interatividade.",
+
+      site: "https://pedrosoftsite.vercel.app/#/",
+      github: "https://github.com/nanahmattos/pedrosoftsite",
+    },
+    {
+      title: "Centro Automotivo",
+      subtitle: "Vue • JS • Quasar • SASS",
+      image: "/images/projetos/cam.png",
+
+      description:
+        "Landing page criada para um comércio de oficina mecânica, com foco em apresentar serviços de forma direta e visual. O projeto foi desenvolvido com Vue, Quasar Framework, JavaScript e estilização em Sass.",
+
+      site: "https://pedrosoftsite.vercel.app/#/",
+      github: "https://github.com/nanahmattos/pedrosoftsite",
     },
     {
       title: "E-Food",
@@ -72,7 +94,7 @@ const ProjetosPage = () => {
       <div className="h-full w-full p-2 md:p-6 mb-2 rounded-xl bg-white/10 backdrop-blur-md border border-white/20 shadow-lg justify-center flex">
         <div className="overflow-y-auto flex-1 flex justify-center items-center">
           <div className="grid md:grid-cols-2 items-center max-w-5xl w-full gap-4">
-            <div className="flex justify-center items-center">
+            <div className="flex justify-center items-center ">
               <Image
                 src={activeProject.image}
                 alt={activeProject.title}
@@ -125,13 +147,15 @@ const ProjetosPage = () => {
                 : "hover:scale-110"
             }`}
           >
-            <Image
-              src="/icons/chevron_left.svg"
-              alt="left"
-              width={30}
-              height={30}
-              className="invert"
-            />
+            <div>
+              <Image
+                src="/icons/chevron_left.svg"
+                alt="left"
+                width={30}
+                height={30}
+                className="invert"
+              />
+            </div>
           </button>
           <button
             onClick={handleNext}
@@ -151,12 +175,12 @@ const ProjetosPage = () => {
             />
           </button>
         </div>
-        <div className="overflow-x-auto overflow-y-hidden md:overflow-visible px-4 md:py-2">
-          <div className="flex md:grid gap-4 md:grid-cols-[repeat(auto-fit,minmax(120px,1fr))]">
+        <div className="overflow-x-auto overflow-y-hidden px-4 py-2">
+          <div className="flex gap-4 min-w-max">
             {projects.map((project, index) => (
               <div
                 key={index}
-                className={`min-w-[150px] md:min-w-0 cursor-pointer rounded-lg border-2 transition-all ${
+                className={`min-w-[150px] cursor-pointer rounded-lg border-2 transition-all ${
                   index === activeIndex
                     ? "border-green-400 scale-105"
                     : "border-transparent hover:border-white/50"
