@@ -16,6 +16,16 @@ const ProjetosPage = () => {
       github: "https://github.com/nanahmattos/pedrosoftsite",
     },
     {
+      title: "El Montés Ginásio de Escalada",
+      subtitle: "Vue.js • Bootstrap • JavaScript",
+      image: "/images/projetos/elmontes.png",
+      description:
+        "Landing page desenvolvida para um ginásio de escalada indoor. A proposta era criar um site simples, com foco em imagens e informações introdutórias sobre escalada, um esporte ainda pouco conhecido na cidade. Utilizei Vue.js na construção da interface, Bootstrap para a estilização responsiva e JavaScript para adicionar interatividade.",
+
+      site: "https://elmontes.com.br/",
+      github: "",
+    },
+    {
       title: "Meu segundo Portfólio",
       subtitle: "Next.js • JS • React • Tailwind",
       image: "/images/projetos/portfolio.png",
@@ -123,10 +133,15 @@ const ProjetosPage = () => {
                 </a>
 
                 <a
-                  href={activeProject.github}
+                  href={activeProject.github || "#"}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-center w-1/2 rounded-r-[25px] px-4 py-2 cursor-pointer bg-white text-black hover:bg-green-400 transition-colors"
+                  className={`text-center w-1/2 rounded-r-[25px] px-4 py-2 transition-colors
+    ${
+      !activeProject.github
+        ? "bg-gray-300 text-gray-500 cursor-not-allowed pointer-events-none"
+        : "bg-white text-black hover:bg-green-400 cursor-pointer"
+    }`}
                 >
                   &lt;/&gt; GitHub
                 </a>
@@ -175,8 +190,8 @@ const ProjetosPage = () => {
             />
           </button>
         </div>
-        <div className="overflow-x-auto overflow-y-hidden px-4 py-2">
-          <div className="flex gap-4 min-w-max">
+        <div className="overflow-x-auto overflow-y-hidden px-4 pr-0 py-2">
+          <div className="flex gap-4 w-fit max-w-full">
             {projects.map((project, index) => (
               <div
                 key={index}

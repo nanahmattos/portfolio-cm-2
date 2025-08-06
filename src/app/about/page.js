@@ -39,7 +39,7 @@ const AboutPage = () => {
         Desenvolvedora Front-end
       </p>
       <p className="text-primary">
-        com experiência em <b>UX/UI</b> e, atualmente, expandindo meus conhecimentos em back-end para me tornar uma desenvolvedora <b>full stack</b>.
+        com experiência em <b>UX/UI</b> e, atualmente, expandindo meus conhecimentos em back-end para me tornar uma desenvolvedora <b>Full Stack</b>.
       </p>
 
       <div className="mt-6 w-full">
