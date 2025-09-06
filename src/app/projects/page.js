@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 
 const ProjetosPage = () => {
@@ -85,19 +85,36 @@ const ProjetosPage = () => {
   ];
 
   const [activeIndex, setActiveIndex] = useState(0);
+  const containerRef = useRef(null);
   const activeProject = projects[activeIndex];
 
-  const handlePrev = () => {
-    if (activeIndex > 0) {
-      setActiveIndex((prev) => prev - 1);
+  const scrollToActive = (index) => {
+    const container = containerRef.current;
+    if (container) {
+      const activeItem = container.children[index];
+      if (activeItem) {
+        // Faz o scroll horizontal para que o item ativo fique visível
+        activeItem.scrollIntoView({ behavior: "smooth", inline: "center" });
+      }
     }
+  };
+  const handlePrev = () => {
+    if (containerRef.current) {
+      containerRef.current.scrollBy({ left: -250, behavior: "smooth" }); 
+    }
+    if (activeIndex > 0) setActiveIndex((prev) => prev - 1);
   };
 
   const handleNext = () => {
-    if (activeIndex < projects.length - 1) {
-      setActiveIndex((prev) => prev + 1);
+    if (containerRef.current) {
+      containerRef.current.scrollBy({ left: 250, behavior: "smooth" });
     }
+    if (activeIndex < projects.length - 1) setActiveIndex((prev) => prev + 1);
   };
+
+  useEffect(() => {
+    scrollToActive(activeIndex);
+  }, [activeIndex]);
 
   return (
     <div className="h-full flex flex-col">
@@ -110,7 +127,7 @@ const ProjetosPage = () => {
                 alt={activeProject.title}
                 width={600}
                 height={400}
-                className="object-cover"
+                className="object-cover rounded-md"
               />
             </div>
             <div className="p-2">
@@ -190,7 +207,10 @@ const ProjetosPage = () => {
             />
           </button>
         </div>
-        <div className="overflow-x-auto overflow-y-hidden px-4 pr-0 py-2">
+        <div
+          ref={containerRef}
+          className="overflow-x-auto overflow-y-hidden px-4 pr-0 py-2"
+        >
           <div className="flex gap-4 w-fit max-w-full">
             {projects.map((project, index) => (
               <div

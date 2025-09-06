@@ -106,7 +106,7 @@ export default function Header() {
               height={20}
                
             />
-            <span>Vamos conversar?</span>
+            {/* <span>Contato</span> */}
           </a>
           {/* <button className="hidden md:block px-4 py-2 rounded-full bg-green-600 text-white font-bold hover:bg-green-500 transition">
             Vamos conversar?

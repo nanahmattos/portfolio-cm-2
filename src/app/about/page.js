@@ -25,21 +25,22 @@ const AboutPage = () => {
   <div className="flex justify-center items-center w-full h-full overflow-y-auto max-h-[80vh] p-4 sm:p-0">
     <div className="text-center flex flex-col justify-center items-center w-full max-w-2xl">
       <Image
-        src="/images/nanahmattos.png"
+        src="/images/nanahmattos_chibi.png"
         alt="Foto de Carolina Mattos"
         width={250}
-        priority
         height={250}
-        className="w-40 h-40 sm:w-52 sm:h-52 object-cover mb-4"
+                
+        priority
+        className="w-100 h-auto sm:w-52 sm:h-52 object-contain mb-4"
       />
       <h3 className="title-secondary">
         Carolina Mattos, 27 anos
       </h3>
       <p className="subtitle-primary">
-        Desenvolvedora Front-end
+        Desenvolvedora Front-end,
       </p>
       <p className="text-primary">
-        com experiência em <b>UX/UI</b> e, atualmente, expandindo meus conhecimentos em back-end para me tornar uma desenvolvedora <b>Full Stack</b>.
+        estudante do 5º (e último! 🎉) semestre de <b>Análise e Desenvolvimento de Sistemas</b>, experiência em <b>UX/UI</b> e em constante evolução rumo ao 🚀<b>Full Stack</b>.
       </p>
 
       <div className="mt-6 w-full">
