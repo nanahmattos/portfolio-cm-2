@@ -28,10 +28,9 @@ const AboutPage = () => {
         src="/images/nanahmattos_chibi.png"
         alt="Foto de Carolina Mattos"
         width={250}
-        height={250}
-                
+        height={250}                
         priority
-        className="w-100 h-auto sm:w-52 sm:h-52 object-contain mb-4"
+        className="w-[150px] h-[auto] sm:w-[200px] sm:h-[auto] object-contain mb-4"
       />
       <h3 className="title-secondary">
         Carolina Mattos, 27 anos

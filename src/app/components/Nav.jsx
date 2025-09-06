@@ -24,6 +24,11 @@ export default function Nav() {
       label: "Habilidades",
       icon: "wrench",
     },
+    // {
+    //   href: "/about/projects",
+    //   label: "Projetos",
+    //   icon: "folder-open-dot",
+    // },
   ];
 
   return (

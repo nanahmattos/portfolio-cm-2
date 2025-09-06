@@ -19,7 +19,7 @@ export default function MobileNav() {
       icon: "graduation-cap",
     },
     { href: "/about/skills", label: "Habilidades", icon: "wrench" },
-    // { href: "/projects", label: "Projetos", icon: "wrench" },
+    { href: "/projects", label: "Projetos", icon: "folder-open-dot" },
   ];
 
   return (
