@@ -5,7 +5,7 @@ const Experience = () => {
       empresa: "PedroSoft",
       cargo: "Desenvolvedora Front-end",
       descricao:
-        "Campo Grande/MS • Desenvolvo softwares de gerenciamento financeiro, rotas de transporte e reservas em atrativos destinados a agências de turismo. Integrei pagamentos Mercado Livre e Cielo, além de emissão de nota fiscal eletrônica de serviços. Experiência em ferramentas como HTML, CSS, JavaScript, Vue.js, SASS, Figma, Pinia, Vuex, Cypress, MySQL e Quasar Framework.",
+        "Campo Grande/MS • Desenvolvo softwares de gerenciamento financeiro, rotas de transporte e reservas em atrativos destinados a agências de turismo. Integrei pagamentos Mercado pago e Cielo, além de emissão de nota fiscal eletrônica de serviços. Experiência em ferramentas como HTML, CSS, JavaScript, Vue.js, SASS, Figma, Pinia, Vuex, Cypress, MySQL e Quasar Framework.",
     },
     {
       duracao: "Jan/2022 - Dez/2023",
