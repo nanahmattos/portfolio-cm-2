@@ -25,7 +25,7 @@ export default function Nav() {
       icon: "wrench",
     },
     {
-      href: "/about/projectsx",
+      href: "/about/projects",
       label: "Projetos",
       icon: "folder-open-dot",
     },
