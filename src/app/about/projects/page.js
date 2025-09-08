@@ -62,7 +62,7 @@ const ProjetosPage = () => {
         "Para esta landing page dedicada ao jogo Rayman Legends, concentrei-me em estudos do bootstrap e responsividade. O resultado é uma interface adaptativa e eficiente.",
       image: "/images/projetos/raymanLegends.png",
       site: "https://rayman-legends-game.vercel.app/",
-      git: "https://github.com/nanahmattos/landingPage_rayman_legends.git",
+      github: "https://github.com/nanahmattos/landingPage_rayman_legends.git",
     },
     {
       title: "Netflix Barbie",
@@ -71,7 +71,7 @@ const ProjetosPage = () => {
         "Neste projeto, desenvolvi um clone da página inicial de compra da Netflix, incorporando o tema da Barbie. A landing page foi criada por meio de estudos em SASS, JavaScript, HTML e CSS, destacando também a utilização eficaz das ferramentas do DevTools.",
       image: "/images/projetos/barbie_vercel.png",
       site: "https://netflix-barbie.vercel.app/",
-      git: "https://github.com/nanahmattos/ebac_task_netflix_barbie.git",
+      github: "https://github.com/nanahmattos/ebac_task_netflix_barbie.git",
     },
     {
       title: "Clone Disney+",
@@ -80,7 +80,7 @@ const ProjetosPage = () => {
         "Realizei o clone da página inicial de compra da DisneyPlus, estabelecendo-a como uma referência essencial para o projeto Netflix Barbie-verso. Assim como no primeiro projeto, empreguei SASS, JavaScript, HTML e boas práticas de CSS para garantir uma experiência de usuário consistente.",
       image: "/images/projetos/cloneydisney.png",
       site: "https://clone-disneyplus-hazel-delta.vercel.app/",
-      git: "https://github.com/nanahmattos/clone_disneyplus.git",
+      github: "https://github.com/nanahmattos/clone_disneyplus.git",
     },
   ];
 
