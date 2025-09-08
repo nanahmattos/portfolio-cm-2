@@ -60,7 +60,7 @@ export default function Header() {
     >
       <div className="container mx-auto py-4 px-2 flex justify-between items-center">
       
-        <nav className="hidden md:flex gap-6">
+        {/* <nav className="hidden md:flex gap-6">
           {navLinks.map((link) => (
             <Link
               key={link.href}
@@ -80,7 +80,7 @@ export default function Header() {
           aria-label="Abrir menu"
         >
           ☰
-        </button>
+        </button> */}
         {/* Nome com animação */}
         <Link
           href="/"
@@ -97,16 +97,15 @@ export default function Header() {
             href="https://wa.me/5511959379003" 
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden md:flex items-center px-2 py-2 rounded-full bg-white text-green-600 gap-1 hover:bg-gray-100 transition text-md"
+            className=" md:flex items-center px-2 py-2 rounded-full bg-white text-green-600 gap-1 hover:bg-gray-100 transition text-md"
           >
             <img
               src="/icons/icon_wpp.webp"
               alt="WhatsApp"
               width={20}
-              height={20}
-               
+              height={20}               
             />
-            {/* <span>Contato</span> */}
+            
           </a>
           {/* <button className="hidden md:block px-4 py-2 rounded-full bg-green-600 text-white font-bold hover:bg-green-500 transition">
             Vamos conversar?
@@ -115,7 +114,7 @@ export default function Header() {
       </div>
 
       {/* Navegação mobile */}
-      {menuOpen && (
+      {/* {menuOpen && (
         <nav className="md:hidden bg-black/80 px-4 pb-4 pt-2">
           {navLinks.map((link) => (
             <Link
@@ -130,7 +129,7 @@ export default function Header() {
             </Link>
           ))}
         </nav>
-      )}
+      )} */}
     </header>
   );
 }

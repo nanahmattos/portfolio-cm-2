@@ -14,7 +14,7 @@ export default function MobileNav() {
       icon: "briefcase-business",
     },
     {
-      href: "/about/certificates",
+      href: "/about/certificados",
       label: "Certificados",
       icon: "graduation-cap",
     },

@@ -15,7 +15,7 @@ export default function Nav() {
       icon: "briefcase-business",
     },
     {
-      href: "/about/certificates",
+      href: "/about/certificados",
       label: "Formação",
       icon: "graduation-cap",
     },
@@ -24,11 +24,11 @@ export default function Nav() {
       label: "Habilidades",
       icon: "wrench",
     },
-    // {
-    //   href: "/about/projects",
-    //   label: "Projetos",
-    //   icon: "folder-open-dot",
-    // },
+    {
+      href: "/about/projectsx",
+      label: "Projetos",
+      icon: "folder-open-dot",
+    },
   ];
 
   return (

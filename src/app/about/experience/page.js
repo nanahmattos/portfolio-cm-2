@@ -5,7 +5,7 @@ const Experience = () => {
       empresa: "PedroSoft",
       cargo: "Desenvolvedora Front-end",
       descricao:
-        "Campo Grande/MS • Desenvolvo web softwares de gerenciamento financeiro, rotas de transporte e reservas em atrativos destinados a agências de turismo. Experiência em ferramentas como HTML, CSS, JavaScript, Vue.js, SASS, Figma, Pinia, Vuex, Cypress, MySQL e Quasar Framework.",
+        "Campo Grande/MS • Desenvolvo softwares de gerenciamento financeiro, rotas de transporte e reservas em atrativos destinados a agências de turismo. Integrei pagamentos Mercado Livre e Cielo, além de emissão de nota fiscal eletrônica de serviços. Experiência em ferramentas como HTML, CSS, JavaScript, Vue.js, SASS, Figma, Pinia, Vuex, Cypress, MySQL e Quasar Framework.",
     },
     {
       duracao: "Jan/2022 - Dez/2023",
@@ -30,7 +30,7 @@ const Experience = () => {
       <div className="overflow-y-auto flex-1 mt-4 md:pr-2">
         {content.map((item, index) => {
           return (
-            <div key={index} className="grid grid-cols-6 items-stretch ">
+            <div key={index} className="grid grid-cols-6 items-stretch">
               <div className="text-center flex items-center col-span-1 justify-center md:px-2">
                 <p className="text-xs sm:text-md text-white">{item.duracao}</p>
               </div>
