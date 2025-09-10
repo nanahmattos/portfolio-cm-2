@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
+import { Analytics } from "@vercel/analytics/next"
 
 //import Nav from "./components/Nav";
 
@@ -33,7 +34,7 @@ export default function RootLayout({ children }) {
       >
         <Header />        
         {children}
-        
+        <Analytics />
       </body>
     </html>
   );
