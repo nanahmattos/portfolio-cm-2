@@ -7,7 +7,7 @@ const ProjetosPage = () => {
   const projects = [
     {
       title: "BTMS-Labs",
-      subtitle: "Vue • JS • Quasar • Sass",
+      subtitle: "Vue.js • JavaScript • Quasar • Sass",
       image: "/images/projetos/btmslab.png",
       description:
         "Projeto desenvolvido para uma empresa de tecnologia especializada em soluções de gerenciamento para o setor de turismo. Utilizei Vue, JavaScript, Quasar Framework e Sass para construção do sistema. Além do desenvolvimento do site, também criei a identidade visual e a logo da marca.",
@@ -27,28 +27,28 @@ const ProjetosPage = () => {
     },
     {
       title: "Meu segundo Portfólio",
-      subtitle: "Next.js • JS • React • Tailwind",
+      subtitle: "Next.js • JavaScript • Tailwind",
       image: "/images/projetos/portfolio.png",
       description:
         "Este é meu segundo portfólio, desenvolvido com foco em performance e design responsivo. Utilizei Next.js para renderização otimizada, Tailwind CSS para estilização moderna e JavaScript para interatividade.",
 
-      site: "https://pedrosoftsite.vercel.app/#/",
-      github: "https://github.com/nanahmattos/pedrosoftsite",
+      site: "",
+      github: "https://github.com/nanahmattos/portfolio-cm-2",
     },
     {
       title: "Centro Automotivo",
-      subtitle: "Vue • JS • Quasar • SASS",
+      subtitle: "Vue.js • JavaScript • Quasar • SASS",
       image: "/images/projetos/cam.png",
 
       description:
         "Landing page criada para um comércio de oficina mecânica, com foco em apresentar serviços de forma direta e visual. O projeto foi desenvolvido com Vue, Quasar Framework, JavaScript e estilização em Sass.",
 
-      site: "https://pedrosoftsite.vercel.app/#/",
-      github: "https://github.com/nanahmattos/pedrosoftsite",
+      site: "https://www.centroautomotivomattos.com.br/#/",
+      github: "https://github.com/nanahmattos/centro_automotivo_mattos",
     },
     {
       title: "E-Food",
-      subtitle: "React • TS • AJAX/API • Redux",
+      subtitle: "React • TypeScript • AJAX/API • Redux",
       image: "/images/projetos/efood.png",
       description:
         "Nesse projeto pessoal desenvolvi um site de compras utilizando React, TypeScript, React Router, Redux para dinâmica, Styled Components para estilização e AJAX para a integração da API.",
@@ -57,7 +57,7 @@ const ProjetosPage = () => {
     },
     {
       title: "Rayman Legends",
-      subtitle: "Bootstrap",
+      subtitle: "HTML • Bootstrap",
       description:
         "Para esta landing page dedicada ao jogo Rayman Legends, concentrei-me em estudos do bootstrap e responsividade. O resultado é uma interface adaptativa e eficiente.",
       image: "/images/projetos/raymanLegends.png",
@@ -66,7 +66,7 @@ const ProjetosPage = () => {
     },
     {
       title: "Netflix Barbie",
-      subtitle: "HTML • CSS • SASS • JS",
+      subtitle: "Gulp • JavaScript • Sass",
       description:
         "Neste projeto, desenvolvi um clone da página inicial de compra da Netflix, incorporando o tema da Barbie. A landing page foi criada por meio de estudos em SASS, JavaScript, HTML e CSS, destacando também a utilização eficaz das ferramentas do DevTools.",
       image: "/images/projetos/barbie_vercel.png",
@@ -75,7 +75,7 @@ const ProjetosPage = () => {
     },
     {
       title: "Clone Disney+",
-      subtitle: "HTML • CSS • SASS • JS",
+      subtitle: "HTML • CSS • SASS • JavaScript",
       description:
         "Realizei o clone da página inicial de compra da DisneyPlus, estabelecendo-a como uma referência essencial para o projeto Netflix Barbie-verso. Assim como no primeiro projeto, empreguei SASS, JavaScript, HTML e boas práticas de CSS para garantir uma experiência de usuário consistente.",
       image: "/images/projetos/cloneydisney.png",
