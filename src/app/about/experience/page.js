@@ -10,7 +10,7 @@ const Experience = () => {
     {
       duracao: "Jan/2022 - Dez/2023",
       empresa: "TK7 Marketing",
-      cargo: "Front-end Developer",
+      cargo: "Diretora de arte",
       descricao:
         "São Paulo/SP • Encarreguei-me da gestão de projetos artísticos, incluindo Branding e Campanhas. Liderei a criação e configuração de sites e-commerce em plataformas como Loja Integrada, Wix e Nuvem Shop. Experiência em ferramentas como Adobe Photoshop, Adobe Illustrator, Adobe After Effects e Adobe Premiere.",
     },
