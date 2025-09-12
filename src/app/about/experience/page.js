@@ -1,7 +1,7 @@
 const Experience = () => {
   const content = [
     {
-      duracao: "Jan/2024 - Atual",
+      duracao: "Fev/2024 - Atual",
       empresa: "PedroSoft",
       cargo: "Desenvolvedora Front-end",
       descricao:
