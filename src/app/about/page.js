@@ -39,7 +39,7 @@ const AboutPage = () => {
         Desenvolvedora Front-end,
       </p>
       <p className="text-primary">
-        estudante do 5º (e último! 🎉) semestre de <b>Análise e Desenvolvimento de Sistemas</b>, experiência em <b>UX/UI</b> e em constante evolução rumo ao 🚀<b>Full Stack</b>.
+        graduada em <b>Análise e Desenvolvimento de Sistemas</b>, experiência em <b>UX/UI</b> e em constante evolução rumo ao 🚀<b>Full Stack</b>.
       </p>
 
       <div className="mt-6 w-full">

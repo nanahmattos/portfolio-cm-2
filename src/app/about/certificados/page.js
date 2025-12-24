@@ -1,7 +1,7 @@
 const Certificates = () => {
   const content = [
     {
-      duracao: "Jan/2025 - Conclusão Set/2025",
+      duracao: "Jan/2025 - Dez/2025",
       curso: "Engenharia de Software",
       formacao: "Pós-Graduação Lato Sensu",
       instituicao: "Faculdade Descomplica",
@@ -15,7 +15,7 @@ const Certificates = () => {
       type: "livre",
     },
     {
-      duracao: "Jun/2023 - Conclusão Dez/2025",
+      duracao: "Jun/2023 - Dez/2025",
       curso: "Análise e Desenvolvimento de Sistemas",
       formacao: "Graduação Tecnólogo",
       instituicao: "Estácio",
