@@ -1,7 +1,7 @@
 const Certificates = () => {
   const content = [
     {
-      duracao: "Jan/2025 - Dez/2025",
+      duracao: "Ago/2025 - Fev/2026",
       curso: "Engenharia de Software",
       formacao: "Pós-Graduação Lato Sensu",
       instituicao: "Faculdade Descomplica",
