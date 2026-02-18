@@ -25,7 +25,7 @@ const AboutPage = () => {
   <div className="flex justify-center items-center w-full h-full overflow-y-auto max-h-[80vh] p-4 sm:p-0">
     <div className="text-center flex flex-col justify-center items-center w-full max-w-2xl">
       <Image
-        src="/images/nanahmattos_chibi.png"
+        src="/images/carolina_mattos.png"
         alt="Foto de Carolina Mattos"
         width={250}
         height={250}                
