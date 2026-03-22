@@ -39,7 +39,7 @@ const Certificates = () => {
       duracao: "Jan/2017 - Dez/2022",
       curso: "Design de Moda",
       formacao: "Graduação Bacharel",
-      instituicao: "Anhembi Morumbi (2016 - 2017); FiaamFaam (2020 - 2022)",
+      instituicao: "Anhembi Morumbi (2016 - 2017); FiamFaam (2020 - 2022)",
       type: "graduacao",
     },
   ];
