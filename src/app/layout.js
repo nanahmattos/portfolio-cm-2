@@ -1,7 +1,10 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import Header from "./components/Header";
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/next";
+
+const GA_MEASUREMENT_ID = "G-Q59XK9HG6N";
 
 //import Nav from "./components/Nav";
 
@@ -34,15 +37,19 @@ export default function RootLayout({ children }) {
       >
         <Header />        
         {children}
-        <Analytics />        
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q59XK9HG6N"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments)}
-          gtag('js', new Date());
-        
-          gtag('config', 'G-Q59XK9HG6N');
-        </script>
+        <Analytics />
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_MEASUREMENT_ID}');
+          `}
+        </Script>
       </body>
     </html>
   );
