@@ -1,7 +1,7 @@
 const Certificates = () => {
   const content = [
     {
-      duracao: "Jan/2025 - Conclusão Set/2025",
+      duracao: "Ago/2025 - Fev/2026",
       curso: "Engenharia de Software",
       formacao: "Pós-Graduação Lato Sensu",
       instituicao: "Faculdade Descomplica",
@@ -15,7 +15,7 @@ const Certificates = () => {
       type: "livre",
     },
     {
-      duracao: "Jun/2023 - Conclusão Dez/2025",
+      duracao: "Jun/2023 - Dez/2025",
       curso: "Análise e Desenvolvimento de Sistemas",
       formacao: "Graduação Tecnólogo",
       instituicao: "Estácio",
@@ -39,7 +39,7 @@ const Certificates = () => {
       duracao: "Jan/2017 - Dez/2022",
       curso: "Design de Moda",
       formacao: "Graduação Bacharel",
-      instituicao: "Anhembi Morumbi (2016 - 2017); FiaamFaam (2020 - 2022)",
+      instituicao: "Anhembi Morumbi (2016 - 2017); FiamFaam (2020 - 2022)",
       type: "graduacao",
     },
   ];

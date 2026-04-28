@@ -7,7 +7,7 @@ const ProjetosPage = () => {
   const projects = [
     {
       title: "BTMS-Labs",
-      subtitle: "Vue • JS • Quasar • Sass",
+      subtitle: "Vue.js • JavaScript • Quasar • Sass",
       image: "/images/projetos/btmslab.png",
       description:
         "Projeto desenvolvido para uma empresa de tecnologia especializada em soluções de gerenciamento para o setor de turismo. Utilizei Vue, JavaScript, Quasar Framework e Sass para construção do sistema. Além do desenvolvimento do site, também criei a identidade visual e a logo da marca.",
@@ -27,28 +27,28 @@ const ProjetosPage = () => {
     },
     {
       title: "Meu segundo Portfólio",
-      subtitle: "Next.js • JS • React • Tailwind",
+      subtitle: "Next.js • JavaScript • Tailwind",
       image: "/images/projetos/portfolio.png",
       description:
         "Este é meu segundo portfólio, desenvolvido com foco em performance e design responsivo. Utilizei Next.js para renderização otimizada, Tailwind CSS para estilização moderna e JavaScript para interatividade.",
 
-      site: "https://pedrosoftsite.vercel.app/#/",
-      github: "https://github.com/nanahmattos/pedrosoftsite",
+      site: "",
+      github: "https://github.com/nanahmattos/portfolio-cm-2",
     },
     {
       title: "Centro Automotivo",
-      subtitle: "Vue • JS • Quasar • SASS",
+      subtitle: "Vue.js • JavaScript • Quasar • SASS",
       image: "/images/projetos/cam.png",
 
       description:
         "Landing page criada para um comércio de oficina mecânica, com foco em apresentar serviços de forma direta e visual. O projeto foi desenvolvido com Vue, Quasar Framework, JavaScript e estilização em Sass.",
 
-      site: "https://pedrosoftsite.vercel.app/#/",
-      github: "https://github.com/nanahmattos/pedrosoftsite",
+      site: "https://www.centroautomotivomattos.com.br/#/",
+      github: "https://github.com/nanahmattos/centro_automotivo_mattos",
     },
     {
       title: "E-Food",
-      subtitle: "React • TS • AJAX/API • Redux",
+      subtitle: "React • TypeScript • AJAX/API • Redux",
       image: "/images/projetos/efood.png",
       description:
         "Nesse projeto pessoal desenvolvi um site de compras utilizando React, TypeScript, React Router, Redux para dinâmica, Styled Components para estilização e AJAX para a integração da API.",
@@ -57,30 +57,30 @@ const ProjetosPage = () => {
     },
     {
       title: "Rayman Legends",
-      subtitle: "Bootstrap",
+      subtitle: "HTML • Bootstrap",
       description:
         "Para esta landing page dedicada ao jogo Rayman Legends, concentrei-me em estudos do bootstrap e responsividade. O resultado é uma interface adaptativa e eficiente.",
       image: "/images/projetos/raymanLegends.png",
       site: "https://rayman-legends-game.vercel.app/",
-      git: "https://github.com/nanahmattos/landingPage_rayman_legends.git",
+      github: "https://github.com/nanahmattos/landingPage_rayman_legends.git",
     },
     {
       title: "Netflix Barbie",
-      subtitle: "HTML • CSS • SASS • JS",
+      subtitle: "Gulp • JavaScript • Sass",
       description:
         "Neste projeto, desenvolvi um clone da página inicial de compra da Netflix, incorporando o tema da Barbie. A landing page foi criada por meio de estudos em SASS, JavaScript, HTML e CSS, destacando também a utilização eficaz das ferramentas do DevTools.",
       image: "/images/projetos/barbie_vercel.png",
       site: "https://netflix-barbie.vercel.app/",
-      git: "https://github.com/nanahmattos/ebac_task_netflix_barbie.git",
+      github: "https://github.com/nanahmattos/ebac_task_netflix_barbie.git",
     },
     {
       title: "Clone Disney+",
-      subtitle: "HTML • CSS • SASS • JS",
+      subtitle: "HTML • CSS • SASS • JavaScript",
       description:
         "Realizei o clone da página inicial de compra da DisneyPlus, estabelecendo-a como uma referência essencial para o projeto Netflix Barbie-verso. Assim como no primeiro projeto, empreguei SASS, JavaScript, HTML e boas práticas de CSS para garantir uma experiência de usuário consistente.",
       image: "/images/projetos/cloneydisney.png",
       site: "https://clone-disneyplus-hazel-delta.vercel.app/",
-      git: "https://github.com/nanahmattos/clone_disneyplus.git",
+      github: "https://github.com/nanahmattos/clone_disneyplus.git",
     },
   ];
 
@@ -100,7 +100,7 @@ const ProjetosPage = () => {
   };
   const handlePrev = () => {
     if (containerRef.current) {
-      containerRef.current.scrollBy({ left: -250, behavior: "smooth" }); 
+      containerRef.current.scrollBy({ left: -250, behavior: "smooth" });
     }
     if (activeIndex > 0) setActiveIndex((prev) => prev - 1);
   };
@@ -117,58 +117,56 @@ const ProjetosPage = () => {
   }, [activeIndex]);
 
   return (
-    <div className="h-full flex flex-col">
-      <div className="h-full w-full p-2 md:p-6 mb-2 rounded-xl bg-white/10 backdrop-blur-md border border-white/20 shadow-lg justify-center flex">
-        <div className="overflow-y-auto flex-1 flex justify-center items-center">
-          <div className="grid md:grid-cols-2 items-center max-w-5xl w-full gap-4">
-            <div className="flex justify-center items-center ">
-              <Image
-                src={activeProject.image}
-                alt={activeProject.title}
-                width={600}
-                height={400}
-                className="object-cover rounded-md"
-              />
-            </div>
-            <div className="p-2">
-              <h3 className="text-3xl text-white font-semibold mb-2">
-                {activeProject.title}
-              </h3>
-              <p className="text-white text-xl tracking-[0.2em] font-thin">
-                {activeProject.subtitle}
-              </p>
-              <p className="text-white"> {activeProject.description}</p>
+    <div className="h-full flex flex-col overflow-y-auto gap-4">
+      <div className="flex w-full justify-center items-center p-2 md:p-6 rounded-xl border border-white/20 shadow-lg flex-1">
+        <div className="grid grid-cols-1 md:grid-cols-2 w-full items-center max-w-5xl gap-4">
+          <div className="flex justify-center items-center ">
+            <Image
+              src={activeProject.image}
+              alt={activeProject.title}
+              width={600}
+              height={400}
+              className="object-cover rounded-md"
+            />
+          </div>
+          <div className="p-2">
+            <h3 className="text-3xl text-white font-semibold mb-2">
+              {activeProject.title}
+            </h3>
+            <p className="text-white text-xl tracking-[0.2em] font-thin">
+              {activeProject.subtitle}
+            </p>
+            <p className="text-white"> {activeProject.description}</p>
 
-              <div className="flex w-full max-w-md mt-2">
-                <a
-                  href={activeProject.site}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-center w-1/2 rounded-l-[25px] px-4 py-2 cursor-pointer bg-black text-white hover:bg-green-400 hover:text-black transition-colors"
-                >
-                  Ver Site
-                </a>
+            <div className="flex w-full max-w-md mt-2">
+              <a
+                href={activeProject.site}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-center w-1/2 rounded-l-[25px] px-4 py-2 cursor-pointer bg-black text-white hover:bg-green-400 hover:text-black transition-colors"
+              >
+                Ver Site
+              </a>
 
-                <a
-                  href={activeProject.github || "#"}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`text-center w-1/2 rounded-r-[25px] px-4 py-2 transition-colors
+              <a
+                href={activeProject.github || "#"}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`text-center w-1/2 rounded-r-[25px] px-4 py-2 transition-colors
     ${
       !activeProject.github
         ? "bg-gray-300 text-gray-500 cursor-not-allowed pointer-events-none"
         : "bg-white text-black hover:bg-green-400 cursor-pointer"
     }`}
-                >
-                  &lt;/&gt; GitHub
-                </a>
-              </div>
+              >
+                &lt;/&gt; GitHub
+              </a>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="rounded-xl bg-white/10 backdrop-blur-md border border-white/20 shadow-lg w-full ">
+      <div className="rounded-xl border border-white/20 shadow-lg">
         <div className="flex justify-end p-2">
           <button
             onClick={handlePrev}
@@ -211,7 +209,7 @@ const ProjetosPage = () => {
           ref={containerRef}
           className="overflow-x-auto overflow-y-hidden px-4 pr-0 py-2"
         >
-          <div className="flex gap-4 w-fit max-w-full">
+          <div className="flex gap-4 w-fit max-w-100">
             {projects.map((project, index) => (
               <div
                 key={index}
@@ -227,7 +225,7 @@ const ProjetosPage = () => {
                   alt={project.title}
                   width={150}
                   height={100}
-                  className="rounded-lg object-cover w-full h-[100px]"
+                  className="rounded-lg object-cover w-100 h-[100px]"
                 />
               </div>
             ))}
